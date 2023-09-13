@@ -18,8 +18,10 @@ Curently covers the following live chat integrations:
   ✅ SnapEngage
   ✅ Tawk.to
   ✅ Tidio
+  ✅ Zendesk
 */
 
+:is(
 [id*="chat-bot"],
 [class*="chat-bot"],
 #beacon-container,
@@ -35,30 +37,35 @@ iframe#q-messenger-frame,
 #divSatisfiChat,
 #snapengage-link, div[id^="designstudio"],
 iframe[title="chat widget"],
-#tidio-chat-iframe
+#tidio-chat-iframe,
+#web-messenger-container
+)
 {
   opacity: .069 !important;
-  filter: opacity(.069);
   transition: opacity 200ms;
 }   
 
-[id*="chat-bot"]:hover, [id*="chat-bot"]:focus,
-[class*="chat-bot"]:hover, [class*="chat-bot"]:focus,
-#beacon-container:hover, #beacon-container:focus,
-#chatbot-chat:hover, #chatbot-chat:focus,
-div[class*=\"drift-frame\"]:hover, div[class*=\"drift-frame\"]:focus,
-#fc_widget:hover, #fc_widget:focus,
-#gist-app:hover, #gist-app:focus,
-#gorgias-chat-container:hover, #gorgias-chat-container:focus,
-#hubspot-messages-iframe-container:hover, #hubspot-messages-iframe-container:focus,
-body > div[class^="intercom"]:hover, body > div[class^="intercom"]:focus,
-#kayako-messenger:hover, #kayako-messenger:focus,
-iframe#q-messenger-frame:hover, iframe#q-messenger-frame:focus,
-#divSatisfiChat:hover, #divSatisfiChat:focus,
-#snapengage-link:hover, #snapengage-link:focus,  div[id^="designstudio"]:hover,  div[id^="designstudio"]:focus,
-iframe[title="chat widget"]:hover, iframe[title="chat widget"]:focus,
-#tidio-chat-iframe:hover, #tidio-chat-iframe:focus,
+:is(
+[id*="chat-bot"],
+[class*="chat-bot"],
+#beacon-container,
+#chatbot-chat,
+div[class*="drift-frame"],
+#fc_widget,
+#gist-app,
+#gorgias-chat-container,
+#hubspot-messages-iframe-container,
+body > div[class^="intercom"],
+#kayako-messenger,
+iframe#q-messenger-frame,
+#divSatisfiChat,
+#snapengage-link, div[id^="designstudio"],
+iframe[title="chat widget"],
+#tidio-chat-iframe,
+#web-messenger-container
+):is(:hover, :focus)
  {
   opacity: 1 !important;
-  filter: opacity(.069) ;
 }
+
+
