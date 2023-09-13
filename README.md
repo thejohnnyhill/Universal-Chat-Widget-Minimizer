@@ -24,6 +24,7 @@ Curently covers the following live chat integrations:
 
 
 ## Installation Instructions
+*(Note: these instructions are for v1 of the Arc Boost editor. In the newest version, there's currently no way to set up a global Boost that works across websites. Hopefully this will come soon! In the meantime, you can use a plugin like [Stylus](https://add0n.com/stylus.html) to achieve the same result.)*
 
 - In Arc, click the plus (+) button at the bottom of the sidebar, and click "New Boost"
 - Choose the "Style" Boost template
