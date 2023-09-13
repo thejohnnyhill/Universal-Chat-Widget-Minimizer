@@ -20,6 +20,7 @@ Curently covers the following live chat integrations:
 - [x] SnapEngage
 - [x] Tawk.to
 - [x] Tidio
+- [x] Zendesk
 
 
 ## Installation Instructions
