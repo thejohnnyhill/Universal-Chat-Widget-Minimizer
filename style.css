@@ -36,7 +36,7 @@ body > div[class^="intercom"],
 iframe#q-messenger-frame,
 #divSatisfiChat,
 #snapengage-link, div[id^="designstudio"],
-iframe[title="chat widget"],
+script[src^="https://embed.tawk.to"] + div:not(#niceTryTawkTo),
 #tidio-chat-iframe,
 #web-messenger-container
 )
@@ -60,7 +60,7 @@ body > div[class^="intercom"],
 iframe#q-messenger-frame,
 #divSatisfiChat,
 #snapengage-link, div[id^="designstudio"],
-iframe[title="chat widget"],
+script[src^="https://embed.tawk.to"] + div:not(#niceTryTawkTo),
 #tidio-chat-iframe,
 #web-messenger-container
 ):is(:hover, :focus)
